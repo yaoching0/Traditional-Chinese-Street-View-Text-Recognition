@@ -60,11 +60,21 @@
 ![data_aug](https://github.com/yaoching0/Traditional-Chinese-Street-View-Text-Recognition/blob/main/data/data_aug.jpg)
 
 該資料增強程式存放在 **[path to github repo]/data/classifier_data_augmentation.py**
+
+## 訓練Res-EnsembleNet
+本團隊在競賽中(進階賽)提出了一個專用於分類模型融合之網路，架構圖如下
+![Res-EnsembleNet](https://github.com/yaoching0/Traditional-Chinese-Street-View-Text-Recognition/blob/main/data/Res-EnsembleNet.png)
+
+訓練資料集生成程式 **[path to github repo]/data/generate_feature_for_model_Ensemble_model.py**
+
+訓練程式 **[path to github repo]/trainer/EnsembleNet-train.py**
+
+注：此二程式檔暫未包成自動獲取路徑，需進入程式檔手動替換相關路徑。
 ## 訓練Bert(三分類/Masked Language Modeling)
-三分類和Masked Language Modeling兩個任務都是使用同一個資料集，存在 **[path to repo]/data/tfer-dataset.csv**
+三分類和Masked Language Modeling兩個任務都是使用同一個資料集，存放路徑 **[path to repo]/data/tfer-dataset.csv**
 
 三分類Bert訓練程式檔：**[path to github repo]/trainer/3-class-bert-train.py**
 
 Masked Language Modeling訓練程式檔：**[path to github repo]/trainer/bert-train-normal-LM.py**
 
-注：此二程式檔暫未包成自動獲取路徑，手動替換相關路徑後，即可開始訓練。
+注：此二程式檔暫未包成自動獲取路徑，需進入程式檔手動替換相關路徑。
