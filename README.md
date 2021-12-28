@@ -24,34 +24,43 @@
 
 **下載各個模型的權重檔案：[Google Drive](https://drive.google.com/file/d/1-NUQxovnON0DlgDbFG3s-SCR5XtW6h95/view?usp=sharing)**
 
-將權重存至 [path to repo]/weights/，執行
+將權重存至 [path to repo]/weights/，執行以下指令可對街道圖片中的文字進行偵測及識別
 
 `python inference.py` 
 
+系統默認偵測 **[path to repo]/input_images** 中的圖片，inference.py會自動讀取當前資料夾路徑，故不需再做任何路徑設定，結果會自動存至 **[path to repo]/submission.csv** 中。
 
+## Inference重要參數
 
-**基本參數：**
+雖然使用默認參數可直接執行，但也可以自行指定
 
---yolo                       Yolo模型權重路徑
+'--image-file-path', type=str, 要偵測的圖片資料夾路徑
 
---cls_model_eff       EfficientNetV2模型權重路徑
+'--output-path', type=str, 存放預測結果submission.csv路徑
 
---cls_model_vit       Vision Transfomer模型權重路徑
+'--yolo-string', type=str, 偵測圖片中字串的yolov5權重路徑
 
---cls_model_nf        NF-Net模型權重路徑          
+'--yolo-character', type=str, 偵測圖片中字元的yolov5權重路徑
 
---dataset_path         分類模型資料集路徑
+'--cls-model-eff', type=str, EfficientNetV2分類模型權重路徑
 
---Ensemble_weight 融合模型權重路徑
+'--cls-model-vit', type=str, Vision Transformer分類模型權重路徑
 
---image_file_path    需要預測的image存放的資料夾路徑
+'--cls-model-nf', type=str, Nf Net分類模型權重路徑
 
---bbx_label_path     需要預測的image之比賽方提供的bouding box資訊csv檔路徑
+## 訓練分類模型(EfficientNetV2/NF-Net/Vision Transformer)
 
-  以上參數皆以預設完畢，只要相關檔案和主程式放置同一個資料夾即可直接執行，無須另外調整。
+**分類模型資料集下載：[Google Drive](https://drive.google.com/file/d/1qbEOJeWvy-fejHR2JupT6Sah5L7XQanv/view?usp=sharing)**
 
-  唯若要另外指定其他資料夾中的image作預測，可利用--image_file_path和--bbx_label_path。  
- 
-**最終輸出會存為：…/繁體中文比賽/submission.csv**
+三個模型皆是使用timm訓練，可以參照其[github repo](https://github.com/rwightman/pytorch-image-models)，有完整的範例。
 
-**關於資料處理及模型訓練相關程式介紹請參考報告第三、四章**
+資料前處理請參照Report第三章。
+
+## 訓練Bert(三分類/Masked language model)
+三分類和masked language modeling兩個任務都是使用同一個資料集，存在 **[path to repo]/data/tfer-dataset.csv**
+
+三分類Bert訓練程式檔：**[path to github repo]/trainer/3-class-bert-train.py**
+
+Masked language model訓練程式檔：**[path to github repo]/trainer/bert-train-normal-LM.py**
+
+注：此二程式檔暫未包成自動獲取路徑，手動替換相關路徑後，即可開始訓練。
