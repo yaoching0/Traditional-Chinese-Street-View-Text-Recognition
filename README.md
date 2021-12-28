@@ -54,8 +54,10 @@
 
 三個模型皆是使用timm訓練，可以參照其[github repo](https://github.com/rwightman/pytorch-image-models)，有完整的範例。
 
-資料前處理請參照Report第三章。
+本系統訓練時實作了三重隨機性來逼近模擬真實情況，如下圖
+![data_aug](https://github.com/yaoching0/Traditional-Chinese-Street-View-Text-Recognition/blob/main/data/data_aug.jpg)
 
+該資料增強方式存放在 **[path to github repo]/data/classifier_data_augmentation.py**
 ## 訓練Bert(三分類/Masked language model)
 三分類和masked language modeling兩個任務都是使用同一個資料集，存在 **[path to repo]/data/tfer-dataset.csv**
 
