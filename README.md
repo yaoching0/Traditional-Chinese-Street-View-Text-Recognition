@@ -12,23 +12,23 @@
 注：本系統至少需要8GB顯存
 
 ## 可使用如下指令安裝全部套件
-`conda create -n trad_ch python=3.8`
+`!conda create -n trad_ch python=3.8`
 
-`conda activate trad_ch`
+`!conda activate trad_ch`
 
-`pip install -r requirements.txt`
+`!pip install -r requirements.txt`
 ## Getting Started
 **下載repository**
 
-`git clone https://github.com/yaoching0/Traditional-Chinese-Street-View-Text-Recognition.git`
+`!git clone https://github.com/yaoching0/Traditional-Chinese-Street-View-Text-Recognition.git`
 
-`cd Traditional-Chinese-Street-View-Text-Recognition`
+`!cd Traditional-Chinese-Street-View-Text-Recognition`
 
 **下載各個模型的權重檔案：[Google Drive](https://drive.google.com/file/d/1-NUQxovnON0DlgDbFG3s-SCR5XtW6h95/view?usp=sharing)**
 
 將權重存至 [path to repo]/weights/，執行以下指令可對街道圖片中的文字進行偵測及識別
 
-`python inference.py` 
+`!python inference.py` 
 
 系統默認偵測 **[path to repo]/input_images** 中的圖片，inference.py會自動讀取當前資料夾路徑，故不需再做任何路徑設定，結果會自動存至 **[path to repo]/submission.csv** 中。
 
