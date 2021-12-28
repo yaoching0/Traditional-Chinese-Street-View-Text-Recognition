@@ -16,7 +16,7 @@
 
 `!conda activate trad_ch`
 
-`!pip install -r [path to repo]/requirements.txt`
+`!pip install -r requirements.txt`
 ## Getting Started
 **下載repository**
 
