@@ -12,11 +12,11 @@
 注：本系統至少需要8GB顯存
 
 ## 可使用如下指令安裝全部套件
-`!conda create -n trad_ch python=3.8`
+`conda create -n trad_ch python=3.8`
 
-`!conda activate trad_ch`
+`conda activate trad_ch`
 
-`!pip install -r requirements.txt`
+`pip install -r requirements.txt`
 ## Getting Started
 **下載repository**
 
