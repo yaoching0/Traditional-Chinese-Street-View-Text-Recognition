@@ -73,6 +73,8 @@
 ## 訓練Bert(三分類/Masked Language Modeling)
 三分類和Masked Language Modeling兩個任務都是使用同一個資料集，存放路徑 **[path to repo]/data/tfer-dataset.csv**
 
+Token list 存放路徑 **[path to repo]/data/tokens.txt** 
+
 三分類Bert訓練程式檔：**[path to github repo]/trainer/3-class-bert-train.py**
 
 Masked Language Modeling訓練程式檔：**[path to github repo]/trainer/bert-train-normal-LM.py**
