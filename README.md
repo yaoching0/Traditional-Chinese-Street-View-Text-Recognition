@@ -9,6 +9,8 @@
 
 程式語言：Python 3.8
 
+注：本系統至少需要8GB顯存
+
 ## 可使用如下指令安裝全部套件
 `!conda create -n trad_ch python=3.8`
 
