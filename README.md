@@ -60,11 +60,11 @@
 ![data_aug](https://github.com/yaoching0/Traditional-Chinese-Street-View-Text-Recognition/blob/main/data/data_aug.jpg)
 
 該資料增強程式存放在 **[path to github repo]/data/classifier_data_augmentation.py**
-## 訓練Bert(三分類/Masked language model)
+## 訓練Bert(三分類/Masked language modeling)
 三分類和masked language modeling兩個任務都是使用同一個資料集，存在 **[path to repo]/data/tfer-dataset.csv**
 
 三分類Bert訓練程式檔：**[path to github repo]/trainer/3-class-bert-train.py**
 
-Masked language model訓練程式檔：**[path to github repo]/trainer/bert-train-normal-LM.py**
+Masked language modeling訓練程式檔：**[path to github repo]/trainer/bert-train-normal-LM.py**
 
 注：此二程式檔暫未包成自動獲取路徑，手動替換相關路徑後，即可開始訓練。
