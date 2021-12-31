@@ -80,3 +80,9 @@ Token list 存放路徑 **[path to repo]/data/tokens.txt**
 Masked Language Modeling訓練程式檔：**[path to github repo]/trainer/bert-train-normal-LM.py**
 
 注：此二程式檔暫未包成自動獲取路徑，需進入程式檔手動替換相關路徑。
+
+#### 其中三分類用於判斷[MASK]位置是數字、英文還是中文，如下圖
+![bert_3_class](https://github.com/yaoching0/Traditional-Chinese-Street-View-Text-Recognition/blob/main/data/BERT-3-CLASS.PNG)
+
+#### 而另一個Bert則是做Masked Language Modeling，如下圖
+![bert_mlm](https://github.com/yaoching0/Traditional-Chinese-Street-View-Text-Recognition/blob/main/data/BERT-MLM.PNG)
