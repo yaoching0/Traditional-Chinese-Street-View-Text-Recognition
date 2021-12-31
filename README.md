@@ -85,4 +85,4 @@ Masked Language Modeling訓練程式檔：**[path to github repo]/trainer/bert-t
 ![bert_3_class](https://github.com/yaoching0/Traditional-Chinese-Street-View-Text-Recognition/blob/main/data/BERT-3-CLASS.PNG)
 
 #### 而另一個Bert則是做Masked Language Modeling，如下圖
-![bert_mlm](https://github.com/yaoching0/Traditional-Chinese-Street-View-Text-Recognition/blob/main/data/BERT-MLM.PNG)
+![bert_mlm](https://github.com/yaoching0/Traditional-Chinese-Street-View-Text-Recognition/blob/main/data/BERT-MAKSED-LM.PNG)
