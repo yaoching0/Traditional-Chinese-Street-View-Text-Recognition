@@ -2,7 +2,7 @@
 (2021/12/24)這是Private Leaderboard第一名的實作程式碼，[比賽連結](https://tbrain.trendmicro.com.tw/Competitions/Details/19)
 
 
-(2022/01/13)本系統已獲得比賽 **冠軍**，[獲獎名單](https://www.aicup.tw/post/%EF%BC%81%EF%BC%81%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87%E6%96%87%E5%AD%97%E5%A0%B4%E6%99%AF%E9%AB%98%E9%9A%8E%E7%AB%B6%E8%B3%BD%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE%EF%BC%81%EF%BC%81)
+(2022/01/13)本系統已獲得比賽 **冠軍**，[獲獎名單](https://www.aicup.tw/_files/ugd/7fbdbf_dbcd1fbcaa384a128d9583349cf9db58.pdf)
 ## 系統架構圖
 ![Architecture](https://github.com/yaoching0/Traditional-Chinese-Street-View-Text-Recognition/blob/main/data/Architecture.jpg)
 
