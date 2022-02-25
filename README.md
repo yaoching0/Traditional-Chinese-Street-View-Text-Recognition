@@ -1,6 +1,8 @@
 # AI CUP 2021 繁體中文場景文字辨識競賽－高階賽：複雜街景之文字定位與辨識
-這是Private Leaderboard第一名的實作程式碼，[比賽連結](https://tbrain.trendmicro.com.tw/Competitions/Details/19)
+(2021/12/24)這是Private Leaderboard第一名的實作程式碼，[比賽連結](https://tbrain.trendmicro.com.tw/Competitions/Details/19)
 
+
+(2022/01/13)本系統已獲得比賽 **冠軍**，[獲獎名單](https://www.aicup.tw/post/%EF%BC%81%EF%BC%81%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87%E6%96%87%E5%AD%97%E5%A0%B4%E6%99%AF%E9%AB%98%E9%9A%8E%E7%AB%B6%E8%B3%BD%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE%EF%BC%81%EF%BC%81)
 ## 系統架構圖
 ![Architecture](https://github.com/yaoching0/Traditional-Chinese-Street-View-Text-Recognition/blob/main/data/Architecture.jpg)
 
